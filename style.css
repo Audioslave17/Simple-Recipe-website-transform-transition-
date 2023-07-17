@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1e1f1;
+    background-image: linear-gradient(0deg, #f1e1f1 0%, #eaf1f1 100%);
+}
+/* .container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+} */
+.navContainer{
+    width: 100vw;
+    min-height: 80px;
+    background-color: #04192d;
+    background-image: linear-gradient(160deg, #04192d 0%, #075265 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+#navList{
+    width: 100%;
+    color: white;
+    padding: 15px;
+    list-style: none;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navLogo{
+    font-size: 2.8rem;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+
+.footerBox{
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+    background-color: #04192d;
+    background-image: linear-gradient(160deg, #04192d 0%, #075265 100%);
+}
+
+.footerBox p{
+    color: azure;
+    font-size: 2rem;
+}
+
+.contentBox{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    height: 400px;
+    border-radius: 20px;
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h2{
+    font-size: 2rem;
+}
+
+.ingBox{
+    font-size: 1.3rem;
+}
+.recipeBox{
+    font-size: 1.1rem;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(32, 30, 30, 0.733);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s linear 0s;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* dark theme */
+#moon{
+    cursor: pointer;
+}
